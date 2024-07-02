@@ -1,0 +1,5 @@
+{
+    "editor.find.seedSearchStringFromSelection": "always",
+    "editor.suggest.showFolders": true,
+    "explorer.compactFolders": false
+}
