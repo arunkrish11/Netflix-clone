@@ -1,5 +1,6 @@
 {
     "editor.find.seedSearchStringFromSelection": "always",
     "editor.suggest.showFolders": true,
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "git.ignoreLimitWarning": true
 }
