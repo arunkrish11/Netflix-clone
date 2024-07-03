@@ -13,8 +13,7 @@ function Banner() {
     // You can access API_KEY in bleow, for that you need to use in axion.get(`${API_KEY`}`)
     axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US` ).then((response) => {
       // Movie detailes are in response.data.results[0]
-      console.log(response.data.results[3])
-      setMovie(response.data.results[3])
+      setMovie(response.data.results[0])
     })
   },[])
   
