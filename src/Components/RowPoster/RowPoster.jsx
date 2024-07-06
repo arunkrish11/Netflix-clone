@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import YouTube from 'react-youtube'
 import axios from '../../axios'
 import './RowPoster.css'
-import { API_KEY, imgeUrl } from '../../constansts/constants'
+import { API_KEY, imgeUrl } from '../../Constansts/constants'
 
 // props for each row component, which contain title and url
 function RowPoster(props) {
@@ -27,6 +27,7 @@ function RowPoster(props) {
   }
   return (
       <div className='row_poster'>
+        <br />
         <h3>{props.title}</h3> 
         <div className="posters">
            {movies.map((movie) => (
