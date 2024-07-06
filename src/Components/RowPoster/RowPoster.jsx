@@ -34,7 +34,8 @@ function RowPoster(props) {
             <img onClick={() => handleClick(movie.id)} className={ props.isSmall ? 'small-poster' : 'poster'} src={ `${imgeUrl}${movie.poster_path}: 'Loading'}`} alt={movie.name} />
           ))}
         </div>
-        { UrlId && <YouTube videoId={UrlId.key} opts={{height: '390', width: '100%', playerVars: {autoplay: 1}}} />}      </div>
+        { UrlId && <YouTube videoId={UrlId.key} opts={{height: '390', width: '100%', playerVars: {autoplay: 1}}} />}
+      </div>
   )
 }
 
