@@ -1,6 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
-
-SEO: Search Engine Optimisation
-Keywords to include and exclude in SEO
