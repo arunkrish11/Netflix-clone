@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { imageUrl } from "../../Constants/constants";
+import {API_KEY, imageUrl } from "../../Constants/constants";
 
 // importing axios.js
 import "./Banner.css";
@@ -11,7 +11,6 @@ function Banner() {
   // We need movies details while loading or mounting Banner. So we use useEffect here.
   // useEffect: This hook runs after every render cycle. Which means useEffect work while loading this Banner and execute code inside it.
   useEffect(() => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
     
     const fetchMovie = async () => {
       try {
@@ -20,7 +19,6 @@ function Banner() {
         );
         setMovie(response.data.results[0]);
       } catch (error) {
-        console.log(API_KEY);
         console.error("Banner movie not found", error.message);
       }
     };
