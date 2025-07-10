@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import YouTube from 'react-youtube'
 import axios from '../../axios'
 import './RowPoster.css'
-import { API_KEY, imgeUrl } from '../../Constansts/constants'
+import { API_KEY, imageUrl } from '../../Constants/constants'
 
 // props for each row component, which contain title and url
 function RowPoster(props) {
@@ -32,7 +32,7 @@ function RowPoster(props) {
         <div className="posters">
            {movies.map((movie) => (
             // Using dynamic class name
-            <img onClick={() => handleClick(movie.id)} className={ props.isSmall ? 'small-poster' : 'poster'} src={ `${imgeUrl}${movie.poster_path}: 'Loading'}`} alt={movie.name} />
+            <img onClick={() => handleClick(movie.id)} className={ props.isSmall ? 'small-poster' : 'poster'} src={ `${imageUrl}${movie.poster_path}: 'Loading'}`} alt={movie.name} />
           ))}
         </div>
         { UrlId && <YouTube videoId={UrlId.key} opts={{height: '390', width: '100%', playerVars: {autoplay: 1}}} />}

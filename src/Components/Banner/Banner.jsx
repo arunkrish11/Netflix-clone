@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { API_KEY,imgeUrl } from '../../Constansts/constants'
+import { API_KEY,imageUrl } from '../../Constants/constants'
 // importing axios.js
 import axios from '../../axios'
 import './Banner.css'
@@ -20,7 +20,7 @@ function Banner() {
   
   return (
     <div
-     style={{backgroundImage: `url(${movie ? imgeUrl+movie?.backdrop_path : "Loading" })`}}
+     style={{backgroundImage: `url(${movie ? imageUrl+movie?.backdrop_path : "Loading" })`}}
      className='banner'>
         <div className="content">
             {/* if movie there show movie title or loading */}
