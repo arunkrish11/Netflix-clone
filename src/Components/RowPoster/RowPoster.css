@@ -34,3 +34,47 @@
 .small-poster:hover{
     transform: scale(1.08);
 }
+
+.video-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85); /* dark background overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* make sure it sits on top */
+}
+
+.video-container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 24px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.video-close-btn:hover {
+  color: #ff0000;
+}
