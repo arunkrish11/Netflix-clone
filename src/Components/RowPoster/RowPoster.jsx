@@ -20,14 +20,14 @@ function RowPoster(props) {
     };
 
     fetchMovies();
-  }, []);
+  }, [props.url]);
 
   const handleClick = async (id) => {
     try {
       const response = await instance.get(
         `/movie/${id}/videos?api_key=${API_KEY}&language=en-US`
       );
-      if (response.data.results.length != 0) {
+      if (response.data.results.length !== 0) {
         console.log(response.data.results[0].key);
         setUrlId(response.data.results[0]);
         setShowPlayer(true);
